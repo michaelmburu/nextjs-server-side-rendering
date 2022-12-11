@@ -3,6 +3,7 @@ const UserProfilePage = (props) => {
 }
 
 export const getServerSideProps = async (context) => {
+  const { params, req, res } = context
   return {
     props: {
       username: 'Max',
